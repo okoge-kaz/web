@@ -1,1 +1,0 @@
-# okoge-kaz.github.io
