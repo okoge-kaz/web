@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Web-tutorial</title>
+  </head>
+  <body>
+    <h1>Webチュートリアル</h1>
+
+    <h2>HTMLとは？</h2>
+    <p>
+      <strong>注意</strong>：この文章及び画像は<a href="https://developer.mozilla.org/ja/docs/Learn/HTML/Introduction_to_HTML/Getting_started" target="_blank">mozilla</a>のWebチュートリアルを出典としています。文章及び内容は、注記がない場合、すべて<strong>mozilla</strong>からの引用であり、これに加筆、修正したものです。
+    </p>
+    <p>
+      <a href="/en-US/docs/Glossary/HTML">HTML</a> (ハイパーテキスト・マークアップ・ランゲージ／Hypertext Markup Language) はプログラミング言語ではありません。HTML 言語は、訪れたウェブサイトの構成をブラウザに対して伝えるために使うマークアップ言語です。HTML 言語はウェブ開発者が望むこと次第で、複雑なものにも簡単なものにもなります。HTML は<a href="/en-US/docs/Glossary/Element">要素</a>の集まりからなり、コンテンツの一部を要素で囲む（<em>マークアップ</em>する）ことで、特定の見せ方・動かし方に変えられます。囲むための<a href="/en-US/docs/Glossary/Tag">タグ</a>は、コンテンツの一部をハイパーリンク (ウェブ上の別ページへリンクすること) にしたり、単語を斜体にしたりすることができます。
+    </p>
+
+    <div class="note notecard">
+      <p>
+        <strong>注</strong>:HTML の要素は大文字小文字を区別しません。つまり大文字でも小文字でも書くことができます。例えば <a href="/ja/docs/Web/HTML/Element/title"><code>&lt;title&gt;</code></a> 要素は <code>&lt;title&gt;</code>、<code>&lt;TITLE&gt;</code>、<code>&lt;Title&gt;</code>、<code>&lt;TiTlE&gt;</code> などと書くことができて、どれも正しく動作します。最も良いのは、一貫性や信頼性、その他の理由のためにすべての要素を小文字で書くことです。
+      </p>
+
+      <h2>HTMLの書き方</h2>
+
+      <div>
+        <h3>言語的説明</h3>
+
+        <p><img alt="" src="https://mdn.mozillademos.org/files/9347/grumpy-cat-small.png" style="display: block; margin: 0px auto;" loading="lazy"></p>
+        
+        <p>この要素の主要な部分は次のとおりです:</p>
+        
+        <ol>
+
+         <li>
+           <strong>開始タグ(Opening tag):</strong> 要素名 (この場合は&nbsp;"p")、囲んでいる開き<strong>山括弧</strong>と閉じ<strong>山括弧</strong>で構成されています。これは要素が始まってその効果が開始する位置を宣言しますーこの場合、段落が始まる位置です。
+          </li>
+         <li>
+           <strong>終了タグ(Closing tag):</strong> 要素名の前に一つのスラッシュが含まれることを除けば、開始タグと同じです。これは要素の終了を宣言しますーこの場合、段落が終わる位置です。終了タグを忘れるのは初心者にありがちなミスで、おかしな結果になってしまいます。
+          </li>
+         <li>
+           <strong>内容(Content):</strong> これは要素の内容で、この場合、テキストそのものです。
+          </li>
+         <li>
+           <strong>要素(Element):</strong> 開始タグ + 内容 + 終了タグが要素になります。
+          </li>
+
+        </ol>
+
+        <h3 id="brock_and_inline">
+          <a href="#brock_and_inline" >
+            ブロック要素とインライン要素
+          </a>
+        </h3>
+
+        <div>
+          <p>HTML の要素には 2 つの重要なカテゴリーがあり、それは知っておくべきことです。すなわち、ブロックレベル要素とインライン要素です。</p>
+
+          <ul>
+           <li>
+             ブロックレベル要素はウェブページ上で視認できるブロックを形成します — それらはそれより前にあるいかなるコンテンツに対しても新たな行におけるコンテンツとして表示され、そのブロックの後に来るいかなるコンテンツもまた新たな行で表示されることになります。ブロックレベル要素はそのウェブページの構造、たとえば段落・リスト・ナビゲーションメニュー・フッターなどを表すことに使用される傾向があります。ブロックレベル要素はインライン要素の中にネストされることはできませんが、他のブロックレベル要素にネストされることがあります。
+            </li>
+           <li>
+             インライン要素はブロックレベル要素の中に包含され、なおかつ、段落全体やコンテンツのグループではなく、ドキュメントの内容の小さな部分だけを囲む要素です。インライン要素はドキュメント内に新たな行を表示させません; それらは通常、例えば、
+             <a href="/ja/docs/Web/HTML/Element/a"> <code>&lt;a&gt;</code>  </a> 要素 (ハイパーリンク) 又は 
+             <a href="/ja/docs/Web/HTML/Element/em">  <code>&lt;em&gt;</code> </a> や 
+             <a href="/ja/docs/Web/HTML/Element/strong">  <code>&lt;strong&gt;</code> </a> 
+             といった強調要素のように、テキスト段落の中で表示されます。
+            </li>
+          </ul>
+
+          <p>
+            <strong>注意</strong>: ブロックレベル要素とインライン要素のリストを含む有用なリファレンスページがあります — 
+            <a href="/ja/docs/Web/HTML/Block-level_elements">ブロックレベル要素</a> と
+            <a href="/ja/docs/Web/HTML/Inline_elements">インライン要素</a>  をご覧ください。
+          </p>
+        </div>
+
+
+        <h3 id="empty_elements">
+          <a href="#empty_elements" title="Permalink to 空要素">
+            空要素
+          </a>
+        </h3>
+
+        <div>
+          <p>
+            全ての要素が上述の開始タグ・コンテンツ・終了タグのパターンに従っているわけではありません。いくつかの要素は 1 つのタグのみで構成され、それは通常、ドキュメント内でそれが含まれている場所に何かを挿入したり埋め込むために使用されます。例えば、以下の <a href="/ja/docs/Web/HTML/Element/Img"><code>&lt;img&gt;</code></a> 要素はウェブページ上のそれが含まれた場所に 1 つの画像ファイルを埋め込みます:
+          </p>
+
+          <pre class="brush: html notranslate">
+            <code>
+              <span class="token tag">
+                <span class="token tag">
+                <span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://raw.githubusercontent.com/mdn/beginner-html-site/gh-pages/images/firefox-icon.png<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+
+            </code>
+          </pre>
+          
+          <p>これはページに次の画像を出力するはずです:</p>
+          <p>
+            <img src="https://raw.githubusercontent.com/mdn/beginner-html-site/gh-pages/images/firefox-icon.png">
+          </p>
+          
+          <div class="note notecard">
+          <p><strong>注意</strong>: 空要素 (Empty elements) は Void 要素 (Void elements) と呼ばれていることがあります。</p>
+
+        </div>
+
+        <h3>
+          コーヒーブレイク
+        </h3>
+
+        <div>
+          <p>
+            <code> &lt;div&gt; </code>通称divタグについて、divとは、単体では特に意味を持たないが、<code> &lt;div&gt; </code>で囲んだ部分を、<a href="#brock_and_inline">ブロックレベル要素</a>としてグループ化することができるタグです。グループ化することで、指定した範囲にスタイルシートを適応したりすることができます。さらに、align属性により水平方向（＝左寄せ、中央揃えなど）の位置をまとめて指定できます。
+          </p>
+          <p>
+            同じ意味をもつタグとして<code> &lt;span&gt; </code>タグがありますが、<code> &lt;div&gt; </code>タグはブロックレベル要素としてグループ化するので、見出しや段落、リストなどとしてみなされ前後に改行が入ります。ちなみに、上述の<code> &lt;span&gt; </code>タグは、インライン要素で文章の一部として利用されるので前後に改行が入りません。
+          </p>
+          <p>参考: <a href="https://html-coding.co.jp/annex/dictionary/html/div/">Chrono Drive</a></p>
+        </div>
+
+        <h3 id="attributes">
+          <a href="#attributes" title="Permalink to 属性">属性</a>
+        </h3>
+
+        <div>
+          <p>要素は次のように属性(Attribute)を持つこともできます:</p>
+
+          <p>
+            <img alt="&amp;amp;amp;lt;p class=&quot;editor-note&quot;>My cat is very grumpy&amp;amp;amp;lt;/p>" src="https://mdn.mozillademos.org/files/9345/grumpy-cat-attribute-small.png" style="display: block; margin: 0px auto;" loading="lazy">
+          </p>
+          
+          <p>
+            属性は実際のコンテンツの中で表示させたくない「要素に関する追加情報」を保有します。上のケースでは <code>class</code> 属性は、その要素に後でスタイル情報などが適用される対象であることを示すものとして使用できるような、固有の名前を持つことを許容します。
+          </p>
+          
+          <p>各属性は次の要件を満たす必要があります:</p>
+          
+          <ol>
+            <li>属性名と要素名の間に 1 つの半角スペース (その要素内にすでに 1 つ以上の属性が設定されている場合は、併せて各属性名の間)</li>
+            <li>属性名とそれに続く等号 (=)</li>
+            <li>属性値。始端から終端までをクォーテーションマーク (引用符) で囲む</li>
+          </ol>
+
+        </div>
+          
+        <h3 id="active_learning_adding_attributes_to_an_element">
+          <a href="#active_learning_adding_attributes_to_an_element" title="Permalink to 実習: 要素に属性を追加する">
+            実習: 要素に属性を追加する
+          </a>
+        </h3>
+          
+        <div>
+          <p>
+            要素のもう一つの例として <a href="/ja/docs/Web/HTML/Element/a"><code>&lt;a&gt;</code></a> (これを「アンカー」と言って、テキストの一部を囲んでハイパーリンクにするものです) を考えます。アンカー要素は多くの属性を持つことができますが、例えばこれらのものが使われます:
+          </p>
+
+          <ul>
+
+            <li>
+              <code>href</code>: この属性にはリンクが参照するウェブ上のアドレスを指定します。またはリンクをクリックしたときにブラウザーが遷移する場所のことです。例えば、<code>href="https://www.mozilla.org/"</code> のように指定します。
+            </li>
+
+            <li>
+              <code>title</code>: この属性にはリンクについての追加情報（リンク先のページが何であるかなど）を記載します。例えば、<code>title="The Mozilla homepage"</code> のように書きます。この内容はリンクにマウスカーソルを重ねた (マウスホバー) 時にツールチップとして表示されるでしょう。
+            </li>
+
+            <li>
+              <code>target</code>: リンク先の内容を表示する場所 (ブラウジングコンテキスト) を指定します。例えば、<code>target="_blank"</code> と指定すると、リンク先の内容を新しいタブに表示します。現在のタブにリンク先の内容を表示させたい場合は <code>target</code>属性を省略します。
+            </li>
+
+          </ul>
+
+        </div>
+           
+      </div>
+
+    </div>
+
+    <h2 id="anatomy_of_a_html_document">
+      <a href="#anatomy_of_a_html_document" title="Permalink to HTML 文書の構成">
+        HTML 文書の構成
+      </a>
+    </h2>
+    <div>
+      <p>
+        これまで、個々の HTML の要素の基礎を説明しましたが、それら単体ではあまり有用ではありません。ここでは個々の HTML の要素を使って HTML ページを構成する方法を説明していきます。
+      </p>
+
+      <ol>
+        <li>
+         <p>
+           <code>&lt;!DOCTYPE html&gt;</code>: いわゆる "doctype" というものです。 HTML の黎明期(1991～1992年あたり)には、 "doctype" というものは HTML の文法セットへのリンクとしての役割を持っていました。当時の "doctype" の記述は自動エラーチェックが容易であるなどの長所も持っていました。当時の "doctype" は、次のようなものでした。
+          </p>
+       
+         <pre class="notranslate">
+           <code>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+            "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</code>
+          </pre>
+       
+         <p>
+           しかし、今日においては誰も HTML における&nbsp;"doctype" の本来的な役割なんて考えていません。&nbsp;"doctype" はつじつま合わせのための歴史的な産物です。今日においてには&nbsp;<code>&lt;!DOCTYPE html&gt;</code> は正しい "doctype" と認識させるための最も簡潔な記述です。 "doctype" について、これ以上知る必要はありません。
+          </p>
+
+        </li>
+
+        <li>
+          <p>
+            <code>&lt;html&gt;&lt;/html&gt;</code>: <a href="/ja/docs/Web/HTML/Element/html"><code>&lt;html&gt;</code></a> 要素。 HTML 文書は<code>&lt;html&gt;</code>要素 1 つだけからなります。この要素はページ全体であり、<code>&lt;html&gt;</code> タグはページ全体を囲んでいます。<code>&lt;html&gt;</code> 要素はルート要素とも呼ばれます。
+         </p>
+        </li>
+
+        <li>
+          <p>
+            <code>&lt;head&gt;&lt;/head&gt;</code>: <a href="/ja/docs/Web/HTML/Element/head"><code>&lt;head&gt;</code></a> 要素。この要素は、HTML ページに入れておきたいが見せたくないすべてのものを入れておくコンテナーの働きをします。例えば、検索結果に出したいページのキーワードや説明や、ページのスタイルを指定するための CSS や、文字エンコーディングの定義などが含まれます。より詳しくは、このシリーズの次の記事で詳しく説明します。
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <code>&lt;meta charset="utf-8"&gt;</code>: この要素はこの文書が UTF-8 という文字コードを使用しているということをブラウザーに伝えるためのものです。UTF-8 は世界中の自然言語の大半をカバーしている文字コードです。重要なこととしてあらゆるテキストコンテンツを扱うことができます。文字コードとして&nbsp;UTF-8 を指定しない手はなく、そうしておけば後で説明する問題を回避できます。
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <code>&lt;title&gt;&lt;/title&gt;</code>: <a href="/ja/docs/Web/HTML/Element/title"><code>&lt;title&gt;</code></a> 要素。これはページのタイトルを指定するもので、ページが読み込まれたブラウザーのタブに表示されます。また、このページをブラウザー上でブックマークしたりお気に入りに追加したりすると <code>&lt;title&gt;</code> 要素の内容がページの説明として使われます。
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <code>&lt;body&gt;&lt;/body&gt;</code>: <a href="/ja/docs/Web/HTML/Element/body"><code>&lt;body&gt;</code></a> 要素。この中にユーザーがページを訪問した時に表示したいコンテンツ (例えば、テキスト、画像、ビデオ、ゲーム、オーディオトラック等) を記述します。
+          </p>
+        </li>
+
+      </ol>
+
+    </div>
+
+    <h3 id="whitespace_in_html">
+      <a href="#whitespace_in_html" title="Permalink to HTML 内の空白">HTML 内の空白</a>
+    </h3>
+    <div>
+      <p>
+        上記の例において、大量の半角スペースが挿入されていることに気づいたかもしれません。大量の半角スペースはあっても無くても構わないものです。次の２つのコードスニペット (それ単体では動作しないコード例のこと) は等価です。
+      </p>
+
+      <pre class="brush: html notranslate">
+        <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Dogs are silly.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Dogs        are
+                 silly.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></code>
+      </pre>
+
+      <p>
+        半角スペースをどれ程入力しても (そして、どれ程改行しても)、 HTML パーサはそれを１つの半角スペースとして認識します。ではどうして半角スペースを沢山入力するのでしょうか。それは&nbsp;HTML コードの可読性を向上させるためです。 HTML のコードがいいフォーマット(書式)で記述されていて、１行の中に沢山タグをゴチャゴチャに詰め込まなければ、そのコードの中がどうなっているかが分かりやすくなります。この記事ではインデント(字下げ)として半角スペース２文字分を挿入しています。 HTML のフォーマット(例えば、インデントとして半角スペース何文字分を挿入するのか等)については HTML の書き手によって様々ですが、フォーマットを意識して記述しなければなりません。
+      </p>
+
+    </div>
+
+    <p>
+      以上で、HTMLの初歩についての学習は終了です。さらに深く学んでみたい方は<a href="next_step.html" target="_blank">こちら</a>
+    </p>
+  </body>
+</html>
