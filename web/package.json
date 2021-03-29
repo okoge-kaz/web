@@ -1,6 +1,6 @@
 {
   "name": "web",
-  "homepage":"https://okoge-kaz.github.io/web/react-app",
+  "homepage":"https://okoge-kaz.github.io/web",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
