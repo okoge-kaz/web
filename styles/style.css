@@ -1,0 +1,20 @@
+#icon-img {
+  width: 100px;
+}
+
+.language {
+  width: 35px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.contents {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
