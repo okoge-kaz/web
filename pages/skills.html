@@ -1,12 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <p>skills</p>
-</body>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Bootstrap -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+			integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+			crossorigin="anonymous"
+		></script>
+		<!-- hand made css -->
+		<link rel="stylesheet" href="styles/skills.css" />
+		<!-- fabicon -->
+		<link rel="icon" href="../images/icon.jpeg" />
+		<title>Skills</title>
+	</head>
+	<body>
+		<!-- header -->
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-light brand-color">
+				<a class="navbar-brand" href="../index.html">
+					<img src="../images/icon.jpeg" alt="icon" width="30" /> okoge</a
+				>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="../index.html"
+								>Home <span class="sr-only">(current)</span></a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="about.html">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Skills</a>
+						</li>
+            <li class="nav-item">
+							<a class="nav-link" href="https://github.com/okoge-kaz?tab=repositories">GitHub</a>
+						</li>
+					</ul>
+					<div class="my-2 my-lg-0 small-icon">
+						<a href="https://github.com/okoge-kaz"><img src="../images/github-icon.svg" alt="github" width="25"></a>
+          </div>
+					<div class="my-2 my-lg-0 small-icon">
+						<a href="https://twitter.com/Okoge_Kaz"><img src="../images/twitter.svg" alt="twitter" width="30"></a>
+          </div>
+				</div>
+			</nav>
+		</header>
+
+		<!-- main-contents -->
+		<div class="jumbotron jumbotron-fluid">
+			<div class="container">
+				<h1 class="display-4">Skills</h1>
+				<p class="lead">okoge's portfolio is here !</p>
+			</div>
+		</div>
+		<!-- content -->
+		<div class="d-flex justify-content-center">
+			<!-- content1 -->
+			<div class="card" style="width: 18rem">
+				<img src="../images/atcoder.gif"  alt="atcoder" />
+				<div class="card-body">
+					<h5 class="card-title">
+						AtCoder<span class="badge badge-pill badge-light"
+							><a href="https://atcoder.jp/users/kaz20"
+								>Link</a
+							>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://atcoder.jp/users/kaz20" target="_blank" title="kaz20"><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fatcoder-badges.now.sh%2Fapi%2Fatcoder%2Fjson%2Fkaz20" /></a></span
+						>
+					</h5>
+					<p class="card-text">競技プログラミングをしています。2020年の夏頃からはじめました。</p>
+
+				</div>
+			</div>
+			<!-- content2 -->
+			<div class="card" style="width: 18rem">
+				<img
+					src="../images/kaggle-logo.png"
+					class="card-img-kaggle"
+					alt="kaggle"
+				/>
+				<div class="card-body">
+					<h5 class="card-title card-title-kaggle">
+						Kaggle<span class="badge badge-pill badge-light"
+							><a href="https://www.kaggle.com/okogekaz"
+								>Link</a
+							></span
+						>
+					</h5>
+					<p class="card-text">
+						はじめたてほやほやです。現在タイタニックしかやっていません。
+					</p>
+				</div>
+			</div>
+			<!-- content3 -->
+			<div class="card" style="width: 18rem">
+				<img src="../images/ctf.png" class="card-img-ctf" alt="ctf" />
+				<div class="card-body card-title-ctf">
+					<h5 class="card-title">
+						CTF
+					</h5>
+					<p class="card-text">2021年の春頃からはじめました。精進中です。</p>
+				</div>
+			</div>
+			<!-- end -->
+		</div>
+		<!-- footer -->
+		<footer>
+			<div class="bg-light py-3 mt-5">
+				<div class="text-center">©︎ 2021 okoge</div>
+				<div class="text-center">
+					<a href="https://github.com/okoge-kaz/web">Github Repository</a>
+				</div>
+			</div>
+		</footer>
+	</body>
 </html>

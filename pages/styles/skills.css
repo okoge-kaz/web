@@ -1,0 +1,33 @@
+.brand-color {
+	background-color: #eafde3;
+}
+
+.small-icon {
+  padding: 10px;
+}
+
+.card-img-top {
+  width: 75%;
+  margin: auto;
+  padding-top: 10px;
+}
+
+.card-img-kaggle {
+	width: 75%;
+	padding-top: 6em;
+	margin: auto;
+}
+
+.card-title-kaggle {
+	padding-top: 5.5em;
+}
+
+.card-img-ctf {
+	width: 75%;
+	padding-top: 5em;
+	margin: auto;
+}
+
+.card-title-ctf {
+	padding-top: 5em;
+}
