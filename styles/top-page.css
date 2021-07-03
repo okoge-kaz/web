@@ -16,3 +16,22 @@ footer {
 .small-icon {
   padding: 10px;
 }
+
+@media screen and (max-width: 850px) {
+  .contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 851px) {
+  .contents {
+    display: flex;
+    justify-content: center;
+  }
+}
