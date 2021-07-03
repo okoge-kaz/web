@@ -5,7 +5,7 @@
 .small-icon {
   padding: 10px;
 }
-
+/* 画像サイズの調整のために冗長なcssを書いている */
 .card-img-top {
   width: 75%;
   margin: auto;
@@ -31,6 +31,7 @@
 .card-title-ctf {
 	padding-top: 5em;
 }
+/* ここまで、cardのなかの文字や画像の位置変更のためのcss */
 
 @media screen and (max-width: 850px) {
   .contents {
